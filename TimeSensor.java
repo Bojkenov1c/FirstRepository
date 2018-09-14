@@ -1,19 +1,16 @@
-import java.util.Scanner;
+import java.util.Date;
 public class TimeSensor {
    public static void main(String[] args) {
-        System.out.println("Type Day/Night");
-        Scanner a = new Scanner(System.in);
-        String x = a.next();
-        String y = "Day";
-        String z = "Night";
-        if(x.equals(y)){
-            System.out.println("Good Morning");
+        Date tarih = new Date();
+        int saat = tarih.getHours();
+        if(saat<8){
+            System.out.println("Good Morning!");
         }
-        else if(x.equals(z)){
-            System.out.println("Good Evening");
+        else if(saat>20){
+            System.out.println("Good Night!");
         }
         else{
-            System.out.println("Wrong Time,Think Again:D");
+            System.out.println("Have a Nice Day!");
         }
    }
 }
