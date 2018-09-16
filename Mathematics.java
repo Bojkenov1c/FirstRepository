@@ -10,7 +10,17 @@ public class Mathematics {
         }
         for(int z = 1;z<100;z=z*2){
             System.out.println(""+z);
-        }  
+        }
+        int a = 0;
+        while(a<=25){
+            System.out.println(""+a);
+            a = a+5;
+        }
+        int b = 0;
+        do{
+            System.out.println(""+b);
+            b = b+3;
+        }while(b<=15);
     }
     
 }
