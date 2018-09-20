@@ -10,7 +10,10 @@ public class BasicCalculator {
         int iþlem,sonuç;
         System.out.println("Addition=1,Extraction=2,Ýmpact=3,Division=4");
         iþlem=x.nextInt();
-        if(iþlem==1){
+        if(iþlem>4){
+        System.out.println("Wrong Type,Try Again");
+        }
+        else if(iþlem==1){
             sonuç=birinci_sayi+ikinci_sayi;
             System.out.println("Result:"+sonuç);
         }
